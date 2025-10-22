@@ -1,12 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FaGraduationCap, FaCode, FaLaptopCode, FaUsers } from 'react-icons/fa';
+import { FaGraduationCap, FaLaptopCode } from 'react-icons/fa'; 
 import './About.css';
 
 const About = () => {
   const [ref, inView] = useInView({
-    threshold: 0.3,
+    threshold: 0.1,
     triggerOnce: true
   });
 
@@ -16,8 +16,7 @@ const About = () => {
       title: 'Educación',
       description: 'Tecnicatura Universitaria en Programacion (UTN - FRRa)'
     },
-    ,
-    {
+    { 
       icon: FaLaptopCode,
       title: 'Educación complementaria',
       description: 'Curso completo FullStack con Php'

@@ -4,10 +4,10 @@ import project2Photo from '../assets/img/redsocial.jpg';
 import project3Photo from '../assets/img/clinica.jpg';
 import project4Photo from '../assets/img/barberia.jpeg';
 
-import { color, motion } from 'framer-motion';
+import {  motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { SiCsharp, SiDotnet, SiLaravel, SiMysql, SiPhp, SiJquery, SiMicrosoftsqlserver, SiNestjs, SiExpress, SiRazer, SiRazorpay } from 'react-icons/si';
-import { FaGithub, FaExternalLinkAlt, FaCode, FaDatabase, FaServer, FaJs, FaHtml5, FaCss3, FaBootstrap, FaBeer, FaTypo3, FaReact, FaNodeJs } from 'react-icons/fa';
+import { SiCsharp, SiDotnet, SiLaravel, SiMysql, SiPhp, SiJquery, SiMicrosoftsqlserver, SiNestjs, SiExpress, SiRazorpay } from 'react-icons/si';
+import { FaGithub, FaExternalLinkAlt, FaCode,  FaJs, FaHtml5, FaCss3, FaBootstrap,FaTypo3, FaReact, FaNodeJs } from 'react-icons/fa';
 import './Projects.css';
 
 const Projects = () => {

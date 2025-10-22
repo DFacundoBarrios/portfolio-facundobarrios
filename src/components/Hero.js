@@ -1,7 +1,7 @@
 import React from 'react';
-import profilePhoto from '../assets/img/FOTO CV.jpeg';
+/*import profilePhoto from '../assets/img/FOTO CV.jpeg';*/
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaEnvelope, FaArrowDown } from 'react-icons/fa'; 
+import { FaGithub, FaLinkedin, FaArrowDown } from 'react-icons/fa'; 
 import './Hero.css';
 
 const Hero = () => {

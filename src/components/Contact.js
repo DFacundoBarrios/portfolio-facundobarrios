@@ -3,7 +3,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import { FaEnvelope,FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import './Contact.css';
 import emailjs from '@emailjs/browser';
 

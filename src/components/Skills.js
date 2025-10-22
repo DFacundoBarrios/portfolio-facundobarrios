@@ -1,9 +1,8 @@
 import React from 'react';
-import { color, motion } from 'framer-motion';
+import {  motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { 
-  FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap, FaGithub,
-  FaDatabase, FaServer, FaCode, FaLaptopCode, 
+  FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap, FaGithub, 
   FaGit
 } from 'react-icons/fa';
 import { SiCsharp, SiDotnet, SiLaravel, SiMicrosoftsqlserver, SiMysql, SiPhp, SiPostman, SiTrello, SiTypescript} from 'react-icons/si';
@@ -11,7 +10,7 @@ import './Skills.css';
 
 const Skills = () => {
   const [ref, inView] = useInView({
-    threshold: 0.,
+    threshold: 0,
     triggerOnce: true
   });
 
