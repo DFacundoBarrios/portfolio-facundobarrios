@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaEnvelope, FaInstagram } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
@@ -19,23 +19,7 @@ const Footer = () => {
     }
   ];
 
-  const socialLinks = [
-    {
-      name: 'GitHub',
-      url: 'https://github.com/DFacundoBarrios',
-      icon: FaGithub
-    },
-    {
-      name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/facundobarrios27/',
-      icon: FaLinkedin
-    },
-    {
-      name: 'Email',
-      url: 'mailto:faqbarrios23@gmail.com',
-      icon: FaEnvelope
-    }
-  ];
+
 
   return (
     <footer className="footer">
