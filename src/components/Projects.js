@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import projectPhoto from '../assets/img/Captura de pantalla 2025-07-04 160941.png';
 import project2Photo from '../assets/img/redsocial.jpg';
-import project3Photo from '../assets/img/clinica.jpg';
+import project3Photo from '../assets/img/clinica1.png';
 import project4Photo from '../assets/img/barberia.jpeg';
 
-import {  motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { SiCsharp, SiDotnet, SiLaravel, SiMysql, SiPhp, SiJquery, SiMicrosoftsqlserver, SiNestjs, SiExpress, SiRazorpay } from 'react-icons/si';
-import { FaGithub, FaExternalLinkAlt, FaCode,  FaJs, FaHtml5, FaCss3, FaBootstrap,FaTypo3, FaReact, FaNodeJs } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaCode, FaJs, FaHtml5, FaCss3, FaBootstrap, FaTypo3, FaReact, FaNodeJs } from 'react-icons/fa';
 import './Projects.css';
 
 const Projects = () => {
@@ -21,7 +21,7 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "GESTOR PARA DESPACHO DE PEDIDOS",
+      title: "GESTOR PARA DESPACHO DE MERCADERIA",
       description: "Sistema integral de gestión de despachos desarrollado como proyecto académico integrador. La aplicación permite administrar el ciclo completo de pedidos desde su recepción hasta la entrega, incluyendo control de inventarios, seguimiento de órdenes, y generación de reportes. Implementado con arquitectura MVC en ASP.NET Core, base de datos SQL Server y una interfaz responsiva con Bootstrap, demostrando competencias en desarrollo empresarial y gestión de sistemas logísticos.",
       image: projectPhoto,
       technologies: [
@@ -78,8 +78,8 @@ const Projects = () => {
     },
     {
       id: 4,
-      title: "GESTOR DE TURNOS PARA CLINICA",
-      description: "En proceso de desarrollo - Proyecto final de la carrera",
+      title: "SISTEMA DE GESTIÓN DE TURNOS CLÍNICOS",
+      description: "Plataforma web full stack desarrollada colaborativamente como proyecto final de carrera. Características principales: sistema de reserva de turnos para pacientes, gestión de agenda médica con disponibilidad horaria, panel administrativo con dashboard de métricas, notificaciones automáticas, y gestión de historiales. Stack técnico: React con TypeScript para una UI moderna y tipada, NestJS como framework backend con arquitectura modular, y MySQL para persistencia de datos. El proyecto refleja experiencia en desarrollo colaborativo, implementación de APIs RESTful, y diseño de sistemas multi-rol para entornos de salud.",
       image: project3Photo,
       technologies: [
         { name: "HTML", icon: FaHtml5, color: "#178600" },
