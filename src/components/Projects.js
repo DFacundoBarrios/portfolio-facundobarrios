@@ -91,6 +91,7 @@ const Projects = () => {
         { name: "Nest.js", icon: SiNestjs, color: "#E0234Eff" },
         { name: "Express", icon: SiExpress, color: "#000000ff" }
       ],
+      githubUrl: "https://github.com/DFacundoBarrios/clinica-frontend",
       liveUrl: null,
       category: "Full Stack"
     }
