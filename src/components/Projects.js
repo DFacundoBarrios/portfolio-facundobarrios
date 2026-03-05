@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import projectPhoto from '../assets/img/Captura de pantalla 2025-07-04 160941.png';
+import projectPhoto from '../assets/img/despachos.png';
 import project2Photo from '../assets/img/redsocial.jpg';
-import project3Photo from '../assets/img/clinica1.png';
+import project3Photo from '../assets/img/capturaclinica.png';
 import project4Photo from '../assets/img/barberia.jpeg';
 
 import { motion } from 'framer-motion';
@@ -22,7 +22,7 @@ const Projects = () => {
     {
       id: 1,
       title: "GESTOR PARA DESPACHO DE MERCADERIA",
-      description: "Sistema integral de gestión de despachos desarrollado como proyecto académico integrador. La aplicación permite administrar el ciclo completo de pedidos desde su recepción hasta la entrega, incluyendo control de inventarios, seguimiento de órdenes, y generación de reportes. Implementado con arquitectura MVC en ASP.NET Core, base de datos SQL Server y una interfaz responsiva con Bootstrap, demostrando competencias en desarrollo empresarial y gestión de sistemas logísticos.",
+      description: "Sistema Logístico de gestión de despachos desarrollado como proyecto académico integrador. La aplicación permite administrar el ciclo completo de pedidos desde su recepción hasta la entrega, incluyendo control de inventarios, seguimiento de órdenes, y generación de reportes. Implementado con arquitectura MVC en ASP.NET Core, base de datos SQL Server y una interfaz responsiva con Bootstrap, demostrando competencias en desarrollo empresarial y gestión de sistemas logísticos.",
       image: projectPhoto,
       technologies: [
         { name: "C#", icon: SiCsharp, color: "#178600" },
@@ -36,7 +36,7 @@ const Projects = () => {
       ],
       githubUrl: "https://github.com/DFacundoBarrios/Sistema-gestion-despachos",
       liveUrl: null,
-      category: "Backend"
+      category: "MVC"
     },
     {
       id: 2,
@@ -55,7 +55,7 @@ const Projects = () => {
       ],
       githubUrl: "https://github.com/DFacundoBarrios/gestor-turnos-lamaquina",
       liveUrl: null,
-      category: "Backend"
+      category: "MVC"
     },
     {
       id: 3,
@@ -78,7 +78,7 @@ const Projects = () => {
     },
     {
       id: 4,
-      title: "SISTEMA DE GESTIÓN DE TURNOS CLÍNICOS",
+      title: "SISTEMA DE GESTIÓN DE TURNOS MÉDICOS",
       description: "Plataforma web full stack desarrollada colaborativamente como proyecto final de carrera. Características principales: sistema de reserva de turnos para pacientes, gestión de agenda médica con disponibilidad horaria, panel administrativo con dashboard de métricas, notificaciones automáticas, y gestión de historiales. Stack técnico: React con TypeScript para una UI moderna y tipada, NestJS como framework backend con arquitectura modular, y MySQL para persistencia de datos. El proyecto refleja experiencia en desarrollo colaborativo, implementación de APIs RESTful, y diseño de sistemas multi-rol para entornos de salud.",
       image: project3Photo,
       technologies: [
@@ -92,6 +92,7 @@ const Projects = () => {
         { name: "Express", icon: SiExpress, color: "#000000ff" }
       ],
       githubUrl: "https://github.com/DFacundoBarrios/clinica-frontend",
+      githubUrlBack: "https://github.com/DFacundoBarrios/backend-clinica", 
       liveUrl: null,
       category: "Full Stack"
     }
@@ -130,7 +131,7 @@ const Projects = () => {
         >
           <motion.div className="projects-header" variants={itemVariants}>
             <h2 className="section-title">
-              <span className="text-gradient">Mis</span> Proyectos
+              <span className="text-gradient">MIS</span> PROYECTOS
             </h2>
             <p className="section-subtitle">
               Explora algunos de los proyectos que he desarrollado utilizando diferentes tecnologías
@@ -176,18 +177,38 @@ const Projects = () => {
                   </div>
 
                   <div className="project-links">
-                    <motion.a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="project-link github"
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                    >
-                      <FaGithub />
-                      Ver Código
-                    </motion.a>
+                    {/* Botón de GitHub Principal (Front o General) */}
+                    {project.githubUrl && (
+                      <motion.a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-link github"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
+                        <FaGithub />
+                        {project.githubUrlBack ? 'Codigo Front' : 'Ver Código'}
+                      </motion.a>
+                    )}
 
+                    {/* Botón de GitHub Secundario (Back - Solo aparece si existe) */}
+                    {project.githubUrlBack && (
+                      <motion.a
+                        href={project.githubUrlBack}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-link github"
+                        style={{ backgroundColor: '#333' }} /* Un tono ligeramente distinto para diferenciarlo */
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
+                        <FaGithub />
+                        Codigo Back
+                      </motion.a>
+                    )}
+
+                    {/* Botón de Proyecto en Vivo */}
                     {project.liveUrl && (
                       <motion.a
                         href={project.liveUrl}

@@ -1,5 +1,5 @@
 import React from 'react';
-/*import profilePhoto from '../assets/img/FOTO CV.jpeg';*/
+import profilePhoto from '../assets/img/IMG_0017.jpg';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaArrowDown } from 'react-icons/fa'; 
 import './Hero.css';
@@ -58,7 +58,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Hola, soy <span className="text-gradient">Facundo</span>
+              HOLA, SOY <span className="text-gradient">FACUNDO</span>
             </motion.h1>
 
             <motion.h2
@@ -67,7 +67,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Desarrollador Full Stack Junior
+              DESARROLLADOR FULL STACK JR
             </motion.h2>
 
             <motion.p
@@ -76,7 +76,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              Estudiante avanzado de la Tecnicatura Superior en Programación (UTN – FRRa),
+              Técnico Superior en Programación (UTN – FRRa),
               con una sólida inclinación y enfoque principal en el Desarrollo Backend. Cuento con conocimientos y experiencia práctica con .NET (C#) para construir APIs robustas y escalables.
             </motion.p>
 
@@ -114,6 +114,8 @@ const Hero = () => {
             transition={{ duration: 1, delay: 0.5 }}
           >
             
+            {/* AQUÍ VA TU IMAGEN */}
+            <img src={profilePhoto} alt="Facundo" className="profile-photo" />
 
             {/* Bloque de enlaces sociales - CORREGIDO */}
             <motion.div

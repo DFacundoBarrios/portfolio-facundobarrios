@@ -3,9 +3,10 @@ import {  motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { 
   FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap, FaGithub, 
-  FaGit
+  FaGit,
+  FaJava
 } from 'react-icons/fa';
-import { SiCsharp, SiDotnet, SiLaravel, SiMicrosoftsqlserver, SiMysql, SiPhp, SiPostman, SiTrello, SiTypescript} from 'react-icons/si';
+import { SiCsharp, SiDotnet, SiLaravel, SiMicrosoftsqlserver, SiMysql, SiNestjs, SiNodedotjs, SiPhp, SiPostman, SiSpringboot, SiTrello, SiTypescript} from 'react-icons/si';
 import './Skills.css';
 
 const Skills = () => {
@@ -31,8 +32,12 @@ const Skills = () => {
       title: "Backend",
       description: "Tecnologías y frameworks para el desarrollo del lado del servidor",
       skills: [
-        { name: "C#", icon: SiCsharp, color: "#239120"},
+        { name: "C#", icon: SiCsharp, color: "#481cca"},
         { name: ".NET", icon: SiDotnet, color: "#512BD4"},
+        { name: "Java", icon: FaJava, color: "#d4392b"},
+        { name: "Spring Boot", icon: SiSpringboot, color: "#2f9429"},
+        { name: "Node.js", icon: SiNodedotjs, color: "#228712"},
+        { name: "Nest.js", icon: SiNestjs, color: "#ec0101"},
         { name: "PHP", icon: SiPhp, color: "#777BB4"},
         { name: "Laravel", icon: SiLaravel, color: "#FF2D20"},
         

@@ -124,6 +124,42 @@
   align-items: center;
 }
 
+.profile-photo {
+  width: 420px; 
+  height: 420px;
+  object-fit: cover;
+  
+  object-position: center 10%; 
+
+  border-radius: 45%; 
+  
+  /*  BORDE DEGRADADO */
+  border: none;
+  padding: 1px; 
+  
+  background: linear-gradient(45deg, var(--primary-color), #41548c); 
+  
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); 
+  margin-bottom: 2rem;
+  z-index: 1;
+  position: relative;
+  transition: transform 0.4s ease, box-shadow 0.4s ease; 
+}
+
+.profile-photo:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25); 
+}
+
+/* Ajuste proporcional para celulares */
+@media (max-width: 768px) {
+  .profile-photo {
+    width: 160px;
+    height: 160px;
+    padding: 3px; /* Un borde apenitas más fino en celular */
+  }
+}
+
 /* Estilos para el contenedor de los enlaces sociales debajo de la imagen */
 .social-links-hero {
   display: flex;

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaTerminal } from 'react-icons/fa';
 import './Header.css';
 
 const Header = () => {
@@ -17,11 +17,11 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { name: 'Inicio', href: '#inicio' },
-    { name: 'Sobre mí', href: '#sobre-mi' },
-    { name: 'Proyectos', href: '#proyectos' },
-    { name: 'Habilidades', href: '#habilidades' },
-    { name: 'Contacto', href: '#contacto' }
+    { name: 'INICIO', href: '#inicio' },
+    { name: 'SOBRE MI', href: '#sobre-mi' },
+    { name: 'PROYECTOS', href: '#proyectos' },
+    { name: 'HABILIDADES', href: '#habilidades' },
+    { name: 'CONTACTO', href: '#contacto' }
   ];
 
   const scrollToSection = (href) => {
@@ -46,8 +46,15 @@ const Header = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <a href="#inicio" onClick={(e) => { e.preventDefault(); scrollToSection('#inicio'); }}>
-              <span className="text-gradient">FB</span>
+            <a 
+              href="#inicio" 
+              onClick={(e) => { e.preventDefault(); scrollToSection('#inicio'); }}
+              style={{ display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none' }}
+            >
+              <FaTerminal className="text-gradient" style={{ fontSize: '1.5rem' }} />
+              <span style={{ color: 'var(--text-primary)', fontWeight: 'bold', fontSize: '1.2rem' }}>
+                Facundo<span className="text-gradient">.dev</span>
+              </span>
             </a>
           </motion.div>
 

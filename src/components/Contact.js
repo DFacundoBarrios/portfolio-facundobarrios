@@ -121,7 +121,7 @@ const Contact = () => {
 
           <div className="contact-grid">
             <motion.div className="contact-info" variants={itemVariants}>
-              <h3>Información de Contacto</h3>
+              <h3>INFORMACIÓN DE CONTACTO</h3>
               <p>
                 Estoy disponible para discutir oportunidades laborales,
                 proyectos freelance o cualquier consulta relacionada con desarrollo web.

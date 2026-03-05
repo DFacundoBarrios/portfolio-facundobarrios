@@ -14,12 +14,12 @@ const About = () => {
     {
       icon: FaGraduationCap,
       title: 'Educación',
-      description: 'Tecnicatura Universitaria en Programacion (UTN - FRRa)'
+      description: 'Tecnicatura Superior en Programación (UTN - FRRa)'
     },
     { 
       icon: FaLaptopCode,
       title: 'Educación complementaria',
-      description: 'Curso completo FullStack con Php'
+      description: 'Curso completo FullStack con PHP y Laravel'
     },
   ];
 
@@ -56,7 +56,7 @@ const About = () => {
         >
           <motion.div className="about-header" variants={itemVariants}>
             <h2 className="section-title">
-              <span className="text-gradient">Sobre</span> Mí
+              <span className="text-gradient">SOBRE</span> MÍ
             </h2>
             <p className="section-subtitle">
               Conoce más sobre mi formación, experiencia y objetivos profesionales
@@ -65,14 +65,9 @@ const About = () => {
 
           <div className="about-grid">
             <motion.div className="about-text" variants={itemVariants}>
-              <h3>Mi Historia</h3>
+              <h3>MI HISTORIA</h3>
               <p>
-                Actualmente, estoy profundizando mis conocimientos en el stack .NET (C# y ASP.NET Core), usándolo en proyectos personales para diseñar APIs RESTful y trabajar con bases de datos relacionales
-              </p>
-              <p>
-                Busco mi primera experiencia laboral como desarrollador, con muchas ganas de seguir aprendiendo,
-                aportar valor y crecer profesionalmente en un entorno que me permita desarrollar mis habilidades
-                y contribuir al éxito de proyectos innovadores.
+               Me encuentro en la etapa final de mi tesis para la Tecnicatura Superior en Programación. Mi perfil combina una fuerte vocación por el Desarrollo Backend con experiencia práctica en el área IT gestionando servidores y sistemas. Actualmente aplico mis conocimientos del ecosistema .NET (C#) en soluciones reales, como el desarrollo de aplicaciones de gestión. Busco dar el salto definitivo al desarrollo de software, aportando mi visión integral de la infraestructura, mi enfoque en la resolución de problemas y mi entusiasmo por construir arquitecturas robustas.
               </p>
             </motion.div>
 
